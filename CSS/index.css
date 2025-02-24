@@ -242,7 +242,7 @@ a {
     padding-right: 10px;
   }
   #nav {
-    height: 35px;
+    height: 45px;
     background-color: #FFFBBF;
     width: 100%;
     display: flex;
@@ -272,8 +272,6 @@ a {
   #nav #nav__search {
     margin-right: 5vw;
     width: 200px;
-  }
-  #nav form {
     position: relative;
   }
   #nav form input {
@@ -283,6 +281,8 @@ a {
     outline: none;
   }
   #nav button {
+    top: 0;
+    left: 200px;
     margin-left: -30px;
     position: absolute;
     background-color: #FFFBBF;
@@ -293,26 +293,12 @@ a {
   #header__right img {
     scale: 1.2;
   }
-  #nav {
-    height: 35px;
-    background-color: #FFFBBF;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  #nav ul {
-    display: flex;
-  }
-  #nav ul li {
-    padding-right: 10px;
-  }
-  #nav ul :not(:last-child):after {
+  #nav ul li:not(:last-child)::after {
     content: "|";
     padding-left: 10px;
     color: #000000;
   }
-  #nav ul :nth-last-child(-n+2) {
+  #nav ul li:nth-last-child(-n+2) {
     display: block;
   }
 }
