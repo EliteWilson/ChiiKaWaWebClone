@@ -1,7 +1,17 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+#body__container {
+  max-width: 100%;
+  /* 限制最大寬度 */
+  margin: 0 auto;
+  /* 讓內容水平置中 */
+  overflow-x: hidden;
+  /* 防止內容溢出 */
+}
+
 html,
 body,
 div,
@@ -139,6 +149,11 @@ a {
 }
 
 @media (min-width: 0px) {
+  #header,
+  #header__announcement,
+  #nav {
+    z-index: 999999999;
+  }
   #header__announcement {
     height: 40px;
     line-height: 40px;
@@ -300,5 +315,41 @@ a {
   }
   #nav ul li:nth-last-child(-n+2) {
     display: block;
+  }
+}
+@media (min-width: 0px) {
+  body {
+    background-image: url(../assets/yellowbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}
+@media (min-width: 0px) {
+  #mobile__carousel {
+    display: block;
+    margin-top: 50px;
+  }
+  #mobile__carousel img {
+    border: 3px solid black;
+    border-radius: 15px;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  .carousel-indicators {
+    bottom: -60px;
+  }
+  .carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #787878 !important;
+    border: none;
+    margin: 5px;
+  }
+}
+@media (min-width: 0px) and (min-width: 576px) {
+  #mobile__carousel {
+    display: none;
   }
 }

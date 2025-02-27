@@ -5,11 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>仿製-Chiikawa市場官方商品商店</title>
-    <!-- CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <!-- CDN-CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/index.css">
@@ -17,48 +14,96 @@
 </head>
 
 <body>
+    <div id="container">
+        <div id="header__announcement">
+            e禮物，通過Line或電子郵件提供禮物
+        </div>
+        <div id="header">
+            <div id="header__burger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <p id="header__greeting">你好!小吉吉</p>
+            <div id="header__logo"><img src="./assets/logo_chiikawamarket_300x.png" alt="logo"></div>
+            <div id="header__right">
+                <div id="header__kuji"><img src="./assets/kuji_icon_02_150x.png" alt="cart"></div>
+                <div id="header__login"><img src="./assets/en_btn_login_112x.png" alt="cart"></div>
+                <div id="header__cart"><img src="./assets/en_btn_cart_112x.png" alt="cart"></div>
+            </div>
+        </div>
+        <div id="nav">
+            <div id="nav__welcome">
+                <img src="./assets/welcome_320x.png" alt="welcome">
+            </div>
+            <div id="nav__menu">
+                <ul>
+                    <li>新商品</li>
+                    <li>重新上貨商品</li>
+                    <li>角色</li>
+                    <li>系列</li>
+                    <li>分類</li>
+                    <li>用戶指南</li>
+                </ul>
+            </div>
 
-    <div id="header__announcement">
-        e禮物，通過Line或電子郵件提供禮物
-    </div>
-    <div id="header">
-        <div id="header__burger">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <p id="header__greeting">你好!小吉吉</p>
-        <div id="header__logo"><img src="./assets/logo_chiikawamarket_300x.png" alt="logo"></div>
-        <div id="header__right">
-            <div id="header__kuji"><img src="./assets/kuji_icon_02_150x.png" alt="cart"></div>
-            <div id="header__login"><img src="./assets/en_btn_login_112x.png" alt="cart"></div>
-            <div id="header__cart"><img src="./assets/en_btn_cart_112x.png" alt="cart"></div>
-        </div>
-    </div>
-    <div id="nav">
-        <div id="nav__welcome">
-            <img src="./assets/welcome_320x.png" alt="welcome">
-        </div>
-        <div id="nav__menu">
-            <ul>
-                <li>新商品</li>
-                <li>重新上貨商品</li>
-                <li>角色</li>
-                <li>系列</li>
-                <li>分類</li>
-                <li>用戶指南</li>
-            </ul>
-        </div>
-
-        <div id="nav__search">
-            <form>
-                <input type="text" placeholder="搜尋商品">
-                <button type="submit" aria-label="search">
+            <div id="nav__search">
+                <form>
+                    <input type="text" placeholder="搜尋商品">
+                    <button type="submit" aria-label="search">
                     <i class="fa-solid fa-magnifying-glass" ></i>
                 </button>
-            </form>
+                </form>
+            </div>
         </div>
+        <div id="web__content">
+            <!-- 輪播圖 -->
+            <div id="mobile__carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#content__carousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#content__carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#content__carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#content__carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#content__carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#content__carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#content__carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/bnr_20240404_571x.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/bnr_20240927_571x.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/bnr_241025_571x.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/bnr_241029_571x.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/bnr_241122_571x.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/bnr_241226_571x.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/cksushi_nui01_bnr_571x.jpg" class="d-block w-100" alt="...">
+                    </div>
+
+                </div>
+            </div>
+            <div id="content__carousel">
+
+            </div>>
+
+        </div>
+
     </div>
-
-
+    </div>
+    <!-- js-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <!-- js-cdn -->
 </body>
 
 </html>

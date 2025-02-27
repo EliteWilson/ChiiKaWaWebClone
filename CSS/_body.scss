@@ -1,0 +1,14 @@
+@media (min-width: 0px) {
+    body {
+        background-image: url(../assets/yellowbackground.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+// 平板到筆電
+@media (min-width: 576px) {}
+
+// 桌機
+@media (min-width: 992px) {}

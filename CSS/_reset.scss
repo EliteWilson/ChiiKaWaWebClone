@@ -3,6 +3,21 @@
    License: none (public domain)
 */
 
+#body__container {
+    max-width: 100%;
+    /* 限制最大寬度 */
+    margin: 0 auto;
+    /* 讓內容水平置中 */
+    overflow-x: hidden;
+    /* 防止內容溢出 */
+}
+
+// body {
+//     overflow-x: hidden;
+// }
+// * {
+//     box-sizing: border-box;
+// }
 html,
 body,
 div,

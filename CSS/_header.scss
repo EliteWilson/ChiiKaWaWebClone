@@ -1,5 +1,10 @@
 // 手機
 @media (min-width:0px) {
+    #header,
+    #header__announcement,
+    #nav {
+        z-index: 999999999;
+    }
     #header__announcement {
         height: 40px;
         line-height: 40px;
