@@ -326,30 +326,16 @@ a {
   }
 }
 @media (min-width: 0px) {
-  #mobile__carousel {
-    display: block;
-    margin-top: 50px;
+  .swiper {
+    max-height: 70vh;
+    margin: 30px 0px;
   }
-  #mobile__carousel img {
-    border: 3px solid black;
+  .swiper .swiper-slide {
+    height: auto;
+  }
+  .swiper img {
+    width: 100%;
     border-radius: 15px;
-    max-width: 80vw;
-    margin: 0 auto;
-  }
-  .carousel-indicators {
-    bottom: -60px;
-  }
-  .carousel-indicators button {
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
-    background-color: #787878 !important;
-    border: none;
-    margin: 5px;
-  }
-}
-@media (min-width: 0px) and (min-width: 576px) {
-  #mobile__carousel {
-    display: none;
+    border: 1px solid black;
   }
 }
