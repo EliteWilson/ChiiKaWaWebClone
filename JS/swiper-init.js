@@ -7,15 +7,17 @@ document.addEventListener("DOMContentLoaded", function() {
             disableOnInteraction: false,
         },
         breakpoints: {
-            0: { slidesPerView: 1.2 },
-            762: { slidesPerView: 2.5 },
-            992: { slidesPerView: 3.5 }
+            0: {
+                slidesPerView: 1.2,
+            },
+            576: {
+                slidesPerView: 2.5,
+            },
+            992: {
+                slidesPerView: 3.5,
 
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
+            }
+
         },
         navigation: {
             nextEl: ".swiper-button-next",
