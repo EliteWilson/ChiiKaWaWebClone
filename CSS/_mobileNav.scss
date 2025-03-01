@@ -1,7 +1,7 @@
 @media (min-width: 0px) {
     #mobile__nav {
         top: 0;
-        width: 300px;
+        width: 250px;
         min-height: 100vh;
         background-color: #FFFBBF;
         position: fixed;
@@ -12,24 +12,25 @@
         display: none;
     }
     #nav-blur {
-        display: none;
         z-index: -2;
-        width: calc(100vw - 300px);
+        width: calc(200vw - 250px);
         height: 100%;
         left: calc(200vw);
-        background-color: rgba(255, 255, 255, 0.758);
+        background-color: rgba(255, 255, 255, 0.75);
         position: absolute;
         transition: left 0.3s;
+        opacity: 0;
     }
     #menu-toggle:checked~#mobile__nav {
         left: 0;
         #nav-blur {
             display: block;
-            left: calc(300px);
+            left: calc(250px);
+            opacity: 1;
         }
     }
     #nav-close {
-        left: 320px;
+        left: 270px;
         scale: 2;
         z-index: -1;
         padding: 10px;
@@ -37,9 +38,9 @@
         background-color: rgba(0, 0, 0, 0);
         position: absolute;
     }
-    // 平板到筆電（可加內容或移除）
+    // 平板到筆電
     @media (min-width: 576px) {}
-    // 桌機隱藏選單
+    // 桌機
     @media (min-width: 768px) {
         #mobile__nav {
             display: none;

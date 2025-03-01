@@ -12,6 +12,10 @@
   /* 防止內容溢出 */
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 div,
@@ -328,7 +332,7 @@ a {
 @media (min-width: 0px) {
   #mobile__nav {
     top: 0;
-    width: 300px;
+    width: 250px;
     min-height: 100vh;
     background-color: #FFFBBF;
     position: fixed;
@@ -339,24 +343,25 @@ a {
     display: none;
   }
   #nav-blur {
-    display: none;
     z-index: -2;
-    width: calc(100vw - 300px);
+    width: calc(200vw - 250px);
     height: 100%;
     left: 200vw;
-    background-color: rgba(255, 255, 255, 0.758);
+    background-color: rgba(255, 255, 255, 0.75);
     position: absolute;
     transition: left 0.3s;
+    opacity: 0;
   }
   #menu-toggle:checked ~ #mobile__nav {
     left: 0;
   }
   #menu-toggle:checked ~ #mobile__nav #nav-blur {
     display: block;
-    left: 300px;
+    left: 250px;
+    opacity: 1;
   }
   #nav-close {
-    left: 320px;
+    left: 270px;
     scale: 2;
     z-index: -1;
     padding: 10px;

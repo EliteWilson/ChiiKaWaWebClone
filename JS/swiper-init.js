@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 slidesPerView: 1.2,
             },
             576: {
-                slidesPerView: 2.5,
+                slidesPerView: 2.4,
             },
             992: {
-                slidesPerView: 3.5,
+                slidesPerView: 3.4,
 
             }
 
