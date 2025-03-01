@@ -1,9 +1,9 @@
 @media (min-width: 0px) {
     #mobile__nav {
         top: 0;
-        width: 250px;
+        width: 275px;
         min-height: 100vh;
-        background-color: #FFFBBF;
+        background-color: #fbf8d2;
         position: fixed;
         left: -100%;
         transition: left 0.3s;
@@ -13,7 +13,7 @@
     }
     #nav-blur {
         z-index: -2;
-        width: calc(200vw - 250px);
+        width: calc(200vw - 275px);
         height: 100%;
         left: calc(200vw);
         background-color: rgba(255, 255, 255, 0.75);
@@ -25,18 +25,83 @@
         left: 0;
         #nav-blur {
             display: block;
-            left: calc(250px);
+            left: calc(275px);
             opacity: 1;
         }
     }
     #nav-close {
-        left: 270px;
-        scale: 2;
-        z-index: -1;
-        padding: 10px;
-        top: calc(25vh - 20px);
+        left: calc(275px - 33.75px);
+        scale: 1.5;
+        z-index: 2;
+        top: 90px;
         background-color: rgba(0, 0, 0, 0);
         position: absolute;
+    }
+    #mobile_nav_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        #nav__greeting {
+            margin-top: 20px;
+            padding: 5px 5px;
+            font-size: 14px;
+            width: 190px;
+            border-radius: 50px;
+            border: 1px solid black;
+            background-color: white;
+            text-align: center;
+        }
+        #greeting_mobile {
+            padding: 5px 5px;
+            width: 160px;
+            text-align: center;
+        }
+        #login_mobile {
+            margin-top: 10px;
+            width: 200px;
+            height: 38px;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FFC2CA;
+            border-radius: 50px;
+            img {
+                height: 100%;
+            }
+            span {
+                color: white;
+            }
+        }
+        #mobile_search {
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid black;
+            display: flex;
+            background-color: white;
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5px;
+            }
+            input {
+                width: 180px;
+                padding: 5px;
+                position: relative;
+                border: none;
+            }
+            #search_button {
+                position: relative;
+                border: none;
+                background-color: white;
+            }
+            i {
+                border: none;
+                scale: 0.8;
+            }
+        }
     }
     // 平板到筆電
     @media (min-width: 576px) {}
