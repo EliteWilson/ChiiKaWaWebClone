@@ -11,6 +11,8 @@
         background-color: hsl(357, 71%, 68%);
         color: white;
         text-align: center;
+        // 測試用
+        // position: relative;
     }
     #header {
         height: 70px;
@@ -58,7 +60,7 @@
     }
     #header__burger {
         margin-left: 15px;
-        i {
+        #nav-open {
             justify-content: flex-start;
             font-size: 30px;
         }

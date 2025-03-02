@@ -21,16 +21,16 @@
         </div>
         <div id="header">
             <div id="header__burger">
-                <input type="checkbox" id="menu-toggle" title="Menu-Toggle" checked>
+                <input type="checkbox" id="menu-toggle" title="Menu-Toggle">
                 <label for="menu-toggle">
                     <i class="fa-solid fa-bars" id="nav-open"></i>
                 </label>
-                <!-- sideNav -->
+                <label for="menu-toggle" id="nav-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <div id="nav-blur">
+                </div>
                 <div id="mobile__nav">
-                    <label for="menu-toggle" id="nav-close">
-                        <i class="fa-solid fa-xmark fa-2xl"></i>
-                    </label>
-                    <div id="nav-blur"></div>
                     <div id="mobile_nav_content">
                         <p id="nav__greeting">你好!小吉吉</p>
                         <img src="./assets/welcome_320x.png" alt="welcome" id="greeting_mobile">
@@ -71,7 +71,20 @@
                             </details>
                             <details>
                                 <summary>重新上貨商品</summary>
-                                <p>這是隱藏的內容，點擊上方的標題來顯示它。</p>
+                                <ul>
+                                    <li>
+                                        <p>補貨產品列表</p>
+                                    </li>
+                                    <li>
+                                        <p>2月27日重新上貨商品</p>
+                                    </li>
+                                    <li>
+                                        <p>2月20日重新上貨商品</p>
+                                    </li>
+                                    <li>
+                                        <p>2月13日重新上貨商品</p>
+                                    </li>
+                                </ul>
                             </details>
                             <details>
                                 <summary>角色</summary>
@@ -88,10 +101,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- sideNav -->
             </div>
             <p id="header__greeting">你好!小吉吉</p>
             <div id="header__logo"><img src="./assets/logo_chiikawamarket_300x.png" alt="logo"></div>
+            <!-- <div id="nothingButaBlock"></div> -->
             <div id="header__right">
                 <div id="header__kuji"><img src="./assets/kuji_icon_02_150x.png" alt="cart"></div>
                 <div id="header__login"><img src="./assets/en_btn_login_112x.png" alt="cart"></div>

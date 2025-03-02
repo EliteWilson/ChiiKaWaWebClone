@@ -1,5 +1,23 @@
 @media (min-width: 0px) {
+    #header {
+        #nav-close {
+            font-size: 40px;
+            top: -100px;
+            position: absolute;
+        }
+    }
+    #menu-toggle:checked~#nav-close {
+        top: 50px;
+        opacity: 1;
+        z-index: 99;
+        left: 280px;
+        transition: top 0.3s;
+    }
     #mobile__nav {
+        max-height: 100vh;
+        overflow-y: auto;
+        position: absolute;
+        // 滾動設定0302
         top: 0;
         width: 275px;
         min-height: 100vh;
@@ -7,38 +25,37 @@
         position: fixed;
         left: -100%;
         transition: left 0.3s;
-        // 滾動設定0302
-        max-height: 90vh;
-        overflow-y: scroll;
     }
     #menu-toggle {
-        display: none;
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        // display: none;
     }
     #nav-blur {
-        z-index: -2;
-        width: calc(200vw - 275px);
-        height: 100%;
-        left: calc(200vw);
-        background-color: rgba(255, 255, 255, 0.75);
-        position: absolute;
-        transition: left 0.3s;
+        position: fixed;
         opacity: 0;
+        width: calc(100vw - 275px);
+        top: -40px;
+        left: calc(100vw);
+        min-height: 100vh;
+        height: calc(100vh + 40px);
+        background-color: rgb(255, 255, 255, 0.5);
+        transition: left 0.3s;
+        #nav-close {
+            position: absolute;
+            top: 50vh;
+            left: 50vw;
+            display: block;
+        }
     }
     #menu-toggle:checked~#mobile__nav {
         left: 0;
-        #nav-blur {
-            display: block;
-            left: calc(275px);
-            opacity: 1;
-        }
     }
-    #nav-close {
-        left: calc(275px - 33.75px);
-        scale: 1.5;
-        z-index: 2;
-        top: 90px;
-        background-color: rgba(0, 0, 0, 0);
-        position: absolute;
+    #menu-toggle:checked~#nav-blur {
+        opacity: 1;
+        left: 275px;
     }
     #mobile_nav_content {
         display: flex;
