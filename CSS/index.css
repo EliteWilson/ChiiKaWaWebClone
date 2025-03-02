@@ -340,6 +340,8 @@ a {
     position: fixed;
     left: -100%;
     transition: left 0.3s;
+    max-height: 90vh;
+    overflow-y: scroll;
   }
   #menu-toggle {
     display: none;
@@ -435,6 +437,34 @@ a {
   #mobile_nav_content #mobile_search i {
     border: none;
     scale: 0.8;
+  }
+  #mobile_nav_content #mobile_menu {
+    width: 240px;
+    background-color: #fbf8d2;
+  }
+  #mobile_nav_content #mobile_menu summary {
+    border-bottom: 1px black solid;
+    margin-top: 10px;
+    padding: 10px 0;
+    font-size: large;
+  }
+  #mobile_nav_content #mobile_menu details {
+    padding: 5px 0;
+  }
+  #mobile_nav_content #mobile_menu details ul li {
+    padding: 10px 0 0 20px;
+  }
+  #mobile_nav_content #mobile_menu details ul p {
+    font-size: 16px;
+    border-bottom: 1px dotted black;
+    padding: 10px;
+  }
+  #mobile_nav_content #mobile_menu details p::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0da";
+    font-weight: 1000;
+    padding: 5px;
+    color: rgb(0, 0, 0);
   }
 }
 @media (min-width: 0px) and (min-width: 768px) {

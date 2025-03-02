@@ -7,6 +7,9 @@
         position: fixed;
         left: -100%;
         transition: left 0.3s;
+        // 滾動設定0302
+        max-height: 90vh;
+        overflow-y: scroll;
     }
     #menu-toggle {
         display: none;
@@ -100,6 +103,36 @@
             i {
                 border: none;
                 scale: 0.8;
+            }
+        }
+        #mobile_menu {
+            width: 240px;
+            background-color: #fbf8d2;
+            summary {
+                border-bottom: 1px black solid;
+                margin-top: 10px;
+                padding: 10px 0;
+                font-size: large;
+            }
+            details {
+                padding: 5px 0;
+                ul {
+                    li {
+                        padding: 10px 0 0 20px;
+                    }
+                    p {
+                        font-size: 16px;
+                        border-bottom: 1px dotted black;
+                        padding: 10px;
+                    }
+                }
+                p::before {
+                    font-family: "Font Awesome 6 Free";
+                    content: "\f0da";
+                    font-weight: 1000;
+                    padding: 5px;
+                    color: rgb(0, 0, 0);
+                }
             }
         }
     }
