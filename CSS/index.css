@@ -330,6 +330,9 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  .newItem {
+    background-color: #FFC2CA;
+  }
 }
 @media (min-width: 0px) {
   #header #nav-close {
