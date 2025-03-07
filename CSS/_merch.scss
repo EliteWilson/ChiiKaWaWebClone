@@ -1,0 +1,40 @@
+@media (min-width: 0px) {
+    .newItem {
+        overflow-x: hidden;
+    }
+    .merch_card {
+        width: 40vw;
+        border-radius: 15px;
+        background-color: white;
+        font-size: 15px;
+        line-height: 1.5;
+        margin: 5px;
+        img {
+            border-radius: 15px;
+        }
+        p {
+            text-align: right;
+        }
+    }
+}
+
+// 平板到筆電
+@media (min-width: 576px) {
+    .merch_card {
+        width: 25vw;
+    }
+}
+
+// 桌機
+@media (min-width: 992px) {
+    .merch_card {
+        width: 20vw;
+    }
+}
+
+@media (min-width: 1400px) {
+    .merch_card {
+        width: 15vw;
+        max-width: 275px;
+    }
+}
