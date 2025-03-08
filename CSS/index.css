@@ -619,6 +619,54 @@ a {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
     overflow-y: hidden;
   }
+  #delivery {
+    width: 60px;
+    border-radius: 10px 0 0 10px;
+    position: fixed;
+    right: 0;
+    top: 40%;
+    z-index: 2;
+    border: 3px solid rgb(99, 99, 99);
+    border-right: none;
+  }
+  #delivery img {
+    border-radius: 10px 0 0 0;
+  }
+  #delivery p {
+    width: 60px;
+    height: 30px;
+    border-radius: 0 0 0 10px;
+    margin-top: -25px;
+    font-size: 10px;
+    line-height: auto;
+    color: rgb(5, 5, 84);
+    background-color: white;
+  }
+  #chatbot {
+    right: 10px;
+    z-index: 3;
+    display: block;
+    position: fixed;
+    top: 85%;
+  }
+  #chatbot #chatbot_mobile {
+    display: block;
+    width: 50px;
+  }
+  #chatbot #chatbot_pc {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  #chatbot {
+    top: calc(60% + 120px);
+  }
+  #chatbot #chatbot_mobile {
+    display: none;
+  }
+  #chatbot #chatbot_pc {
+    display: block;
+  }
 }
 @media (min-width: 1400px) {
   .merch_card {
