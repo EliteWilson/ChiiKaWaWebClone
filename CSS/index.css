@@ -591,7 +591,8 @@ a {
 @media (min-width: 992px) {
   .merch_card {
     margin: 10px;
-    width: 18vw;
+    min-width: 280px !important;
+    width: 19vw;
   }
   .ifSoldOut {
     width: 48px;
