@@ -535,6 +535,7 @@ a {
     overflow-x: hidden;
   }
   .merch_card {
+    position: relative;
     width: 40vw;
     border-radius: 15px;
     background-color: white;
@@ -548,6 +549,19 @@ a {
   }
   .merch_card p {
     text-align: right;
+  }
+  .ifSoldOut {
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-size: 12px;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    width: 38px;
+    height: 32px;
+    border-radius: 15px 0 15px 0;
   }
   .checkMore {
     font-size: 18px;
@@ -569,11 +583,19 @@ a {
     width: 22vw;
     margin: 8px;
   }
+  .ifSoldOut {
+    width: 42px;
+    font-size: 14px;
+  }
 }
 @media (min-width: 992px) {
   .merch_card {
     margin: 10px;
     width: 18vw;
+  }
+  .ifSoldOut {
+    width: 48px;
+    font-size: 14px;
   }
 }
 @media (min-width: 0px) {
