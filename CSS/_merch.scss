@@ -5,7 +5,7 @@
     .merch_card {
         position: relative;
         width: 40vw;
-        border-radius: 15px;
+        border-radius: 10px;
         background-color: white;
         font-size: 15px;
         line-height: 1.5;
@@ -14,7 +14,7 @@
         img {
             border-radius: 15px;
         }
-        p {
+        #price {
             text-align: right;
         }
     }
