@@ -1,4 +1,4 @@
-export const NewSeries = [
+export const ItemList = [
     { title: "New", txt: "新商品列表", url: "#" },
     { title: "New", txt: "3月8日發售商品", url: "#" },
     { title: "New", txt: "2月28日發售商品", url: "#" },
@@ -8,15 +8,11 @@ export const NewSeries = [
     { title: "New", txt: "2月7日發售商品", url: "#" },
     { title: "New", txt: "1月31日發售商品", url: "#" },
     { title: "New", txt: "1月24日發售商品", url: "#" },
-    { title: "New", txt: "1月17日發售商品", url: "#" }
-];
-export const Restocked = [
+    { title: "New", txt: "1月17日發售商品", url: "#" },
     { title: "Restocked", txt: "補貨產品列表", url: "#" },
     { title: "Restocked", txt: "3月6日重新上貨商品", url: "#" },
     { title: "Restocked", txt: "2月27日重新上貨商品", url: "#" },
-    { title: "Restocked", txt: "2月20日重新上貨商品", url: "#" }
-]
-export const Character = [
+    { title: "Restocked", txt: "2月20日重新上貨商品", url: "#" },
     { title: "Character", txt: "吉伊卡哇", url: "#" },
     { title: "Character", txt: "烏薩奇", url: "#" },
     { title: "Character", txt: "小八", url: "#" },
@@ -31,9 +27,7 @@ export const Character = [
     { title: "Character", txt: "盔甲人", url: "#" },
     { title: "Character", txt: "小甲蟲", url: "#" },
     { title: "Character", txt: "哥布林", url: "#" },
-    { title: "Character", txt: "星星", url: "#" }
-];
-export const Series = [
+    { title: "Character", txt: "星星", url: "#" },
     { title: "Series", txt: "吉伊卡哇 平行世界!?", url: "#" },
     { title: "Series", txt: "吉伊卡哇蛋糕", url: "#" },
     { title: "Series", txt: "吉伊卡哇壽司", url: "#" },
@@ -51,9 +45,7 @@ export const Series = [
     { title: "Series", txt: "吉伊卡哇 東京特產", url: "#" },
     { title: "Series", txt: "吉伊卡哇 哇哇幼兒園", url: "#" },
     { title: "Series", txt: "吉伊卡哇飯店", url: "#" },
-    { title: "Series", txt: "吉伊卡哇蘭度", url: "#" }
-];
-export const CategoryData = [
+    { title: "Series", txt: "吉伊卡哇蘭度", url: "#" },
     { title: "Category", txt: "玩偶與吊飾", url: "#" },
     { title: "Category", txt: "雜貨", url: "#" },
     { title: "Category", txt: "室內用品", url: "#" },

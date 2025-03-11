@@ -37,15 +37,12 @@ document.addEventListener("DOMContentLoaded", function() {
             if (item.instock) {
                 soldOut.style.display = "none"; // 如果有庫存，隱藏售罄標籤
             }
-
             merchCard.appendChild(link);
             merchCard.appendChild(pPrice);
             merchCard.appendChild(soldOut);
             row.appendChild(merchCard);
         });
-
         container.appendChild(row);
     }
-
     createMerchCard(NewItemData);
 });
