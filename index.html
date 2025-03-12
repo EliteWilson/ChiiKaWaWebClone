@@ -14,6 +14,7 @@
     <!-- JS -->
     <script src="./JS/newItems.js" type="module"></script>
     <script src="./JS/recommand.js" type="module"></script>
+    <script src="./JS/navPOP.js" type="module"></script>
 
 </head>
 
@@ -126,11 +127,10 @@
         <div id="nav">
             <div id="popBlock">
                 <div id="popContainer" class=" d-flex justify-content-center align-items-center">
-                    <div class="row text-center p-3">
-                        <div class="col-12 fs-5 mb-4 fw-bold">新商品</div>
-                        <div class="col-5 fs-6 m-2">內容標題內容標題</div>
-                        <div class="col-5 fs-6 m-2">內容標題內容標題</div>
-                        <div class="col-5 fs-6 m-2">內容標題內容標題</div>
+                    <div class="row text-center py-3" id="popInner">
+                        <div class="col-12 fs-5 mb-2 fw-bold p-2" id="pop_Title">新商品</div>
+                        <p class="col-5 fs-6 ms-3 my-2">內容標題內容標題</p>
+                        <p class="col-5 fs-6 ms-3 my-2">內容標題內容標題</p>
                     </div>
                 </div>
             </div>
@@ -139,11 +139,11 @@
             </div>
             <div id="nav__menu">
                 <ul>
-                    <li>新商品</li>
-                    <li>重新上貨商品</li>
-                    <li>角色</li>
-                    <li>系列</li>
-                    <li>分類</li>
+                    <li id="New">新商品</li>
+                    <li id="Restocked">重新上貨商品</li>
+                    <li id="Character">角色</li>
+                    <li id="Series">系列</li>
+                    <li id="Category">分類</li>
                     <li>用戶指南</li>
                 </ul>
             </div>
