@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="CSS/index.css">
     <!-- JS -->
     <script src="./JS/newItems.js" type="module"></script>
-    <script src="./JS/Test.js" type="module"></script>
+    <script src="./JS/recommand.js" type="module"></script>
 
 </head>
 
@@ -123,9 +123,17 @@
                 <div id="header__cart"><img src="./assets/en_btn_cart_112x.png" alt="cart"></div>
             </div>
         </div>
-        <div id="nav_pop">
-        </div>
         <div id="nav">
+            <div id="popBlock">
+                <div id="popContainer" class=" d-flex justify-content-center align-items-center">
+                    <div class="row text-center p-3">
+                        <div class="col-12 fs-5 mb-4 fw-bold">新商品</div>
+                        <div class="col-5 fs-6 m-2">內容標題內容標題</div>
+                        <div class="col-5 fs-6 m-2">內容標題內容標題</div>
+                        <div class="col-5 fs-6 m-2">內容標題內容標題</div>
+                    </div>
+                </div>
+            </div>
             <div id="nav__welcome">
                 <img src="./assets/welcome_320x.png" alt="welcome">
             </div>
@@ -202,10 +210,11 @@
                         <!-- 此處將用js生成 -->
                     </div>
                 </div>
+                <a href="#">
+                    <div class="checkMore">查看更多</div>
+                </a>
             </div>
-            <a href="#">
-                <div class="checkMore">查看更多</div>
-            </a>
+
         </div>
         <!-- recommand -->
         <!-- 我偷懶 直接複製貼上 -->
@@ -218,7 +227,7 @@
             <div id="newItem_merch" class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="merch_card">
-                        <a href="#"><img src="./assets/merchs/merch1.jpg " class="img-fluid " alt="merchcard ">
+                        <a href="#"><img src="./assets/merchs/merch16.jpg " class="img-fluid " alt="merchcard ">
                             <p>商品內文測試元件A1</p>
                         </a>
                         <p id="price">NT950$</p>

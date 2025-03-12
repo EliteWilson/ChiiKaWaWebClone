@@ -1,4 +1,4 @@
-import { NewItemData } from "../JS/NewItemData.js";
+import { NewItemData } from "./NewItemData.js";
 
 document.addEventListener("DOMContentLoaded", function() {
 
